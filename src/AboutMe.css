@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Lora&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+
+.about-section {
+  padding: 135px 40px;
+  background-image: url("./assets/about-me-gradient.svg"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 28px;
+  margin: 150px auto 0 auto; 
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.about-heading {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: #272726;
+  display: inline-flex; 
+  align-items: center;
+  gap: 30px;
+  width: 100vw;          
+  max-width: 100%;     
+  position: relative;
+  left: calc(-10vw + 20%); 
+  text-align: left;
+  font-family: 'Lora', serif;
+  font-weight: 700;
+}
+
+/* Vertical line */
+.about-heading::before {
+  content: "";
+  display: inline-block;
+  height: 50px;    
+  width: 5px;     
+  background-color: #272726; 
+  border-radius: 2px; 
+}
+
+.about-paragraph {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-top: 110px;
+  margin-bottom: 15px;
+  color: #272726;
+  text-align: center;
+  max-width: 1000px;  
+  margin-left: auto;
+  margin-right: auto;
+   font-weight: 600;
+}
+
+.about-paragraph span {
+  font-weight: bold;
+}

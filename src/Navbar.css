@@ -1,0 +1,59 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+  height: 75px;  
+  padding: 0.6rem 3rem; 
+  box-sizing: border-box;
+  display: flex;
+  align-items: center; 
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-section {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-section.left,
+.navbar-section.right {
+  flex: 0 0 auto;
+}
+
+.navbar-section.center {
+  flex: 1;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navbar-section.center a {
+  color: #272726;
+  font-weight:200;
+}
+
+
+.logo {
+  height: 110px; 
+  width: auto;
+  max-height: 100%; /* won't overflow navbar */
+  object-fit: contain;
+}
+
+.profile-btn {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  background-color: #ff8686;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}

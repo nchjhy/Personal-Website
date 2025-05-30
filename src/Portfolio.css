@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Lora&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #FBFBFB;
+  color: #272726;
+  scroll-behavior: smooth;
+}
+
+.hero-center {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  overflow: visible;
+}
+
+.hero-center {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+}
+
+.greetings {
+  position: relative;
+  z-index: 1;
+}
+
+.greetings span {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 2.5rem;
+  color: #FF8E8F;
+  font-weight:900;
+}
+
+.greetings h1 {
+  font-family: 'Lora', serif;
+  font-size: 5rem;
+  color: #272726;
+  margin: 0.3rem 0;
+}
+
+.greetings p {
+  font-family: 'Lora', serif;
+  font-size: 2.3rem;
+  color: #272726;
+  margin: 0;
+}
+
+.hero-image {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.9;
+  transform: translateY(179px);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
