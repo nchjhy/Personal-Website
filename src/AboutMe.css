@@ -4,20 +4,26 @@ html{
   scroll-behavior: smooth;
 }
 
-.about-section {
+.about-top {
+  width: 100%;
   padding: 135px 40px;
-  background-image: url("./assets/about-me-gradient.svg"); 
+  background-image: url("./assets/about-me-gradient.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 28px;
-  margin: 150px auto 0 auto; 
-  text-align: center; 
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-
+.about-section {
+  padding: 0 40px;
+  margin: 150px auto 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .about-heading {
   font-size: 3.5rem;
@@ -61,3 +67,69 @@ html{
 .about-paragraph span {
   font-weight: bold;
 }
+
+.tech-tools-section {
+  padding: 40px 0;
+  text-align: center;
+  margin-top: -7rem;
+}
+
+.tools-header {
+  justify-content: flex-start;
+  margin-top: -7rem; 
+}
+
+.section-header {
+  display: flex;
+  margin: 1rem 0 0.5rem; 
+}
+
+.tech-header {
+  justify-content: flex-end;
+}
+
+.tools-header {
+  justify-content: flex-start;
+}
+
+.section-title {
+  font-size: 7.5rem;
+  font-weight: bold;
+  text-transform: lowercase;
+}
+
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: -30px;
+}
+
+.tech-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #000000;;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  min-width: 160px;
+  height: 60px;
+  transition: transform 0.2s ease;
+}
+
+.tech-card:hover {
+  transform: translateY(-3px);
+}
+
+.tech-card img {
+  width: 40px;
+  height: 40px;
+}
+
+.tech-card span {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+

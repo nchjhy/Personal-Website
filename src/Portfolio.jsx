@@ -11,7 +11,7 @@ function Portfolio() {
       <div className="greetings">
         <span>Hello</span>
         <h1>I'm Nichole Jhoy</h1>
-        <p>UI/UX Developer</p>
+        <p>UI/UX Designer</p>
       </div>
       <img src={pfp} alt="Profile Picture" className="hero-image" /> 
     </div>
