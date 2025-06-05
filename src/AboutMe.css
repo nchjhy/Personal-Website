@@ -5,22 +5,20 @@ body, html {
   overflow-x: hidden;
 }
 
-/* background wrapper */
-.about-top {
+/* ABOUT SECTION */
+.about-section {
   width: 100%;
   background-image: url("./assets/about-me-gradient.svg");
-  background-size: 100% 1200px; 
+  background-size: 100% 1200px;
   background-repeat: no-repeat;
   background-position: center top;
-  padding: 270px 20px; 
+  padding: 270px 20px;
   display: flex;
   justify-content: center;
   margin: 173px auto 0 auto;
 }
 
-
-/* content box */
-.about-container {
+.about-content {
   background-color: rgba(255, 255, 255, 0.9);
   border: 1px solid #333;
   border-radius: 20px;
@@ -42,7 +40,12 @@ body, html {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.about-heading {
+.about-text-container {
+  flex: 1;
+  max-width: 650px;
+}
+
+.section-heading {
   font-size: 2rem;
   font-weight: bold;
   display: flex;
@@ -50,51 +53,51 @@ body, html {
   margin-bottom: 30px;
 }
 
-.about-heading .line {
+.heading-underline {
   flex-grow: 1;
   height: 2px;
   background-color: #333;
   margin-left: 20px;
 }
 
-.about-text {
-  flex: 1;
+.about-description {
   font-size: 1.1rem;
   text-align: justify;
-  max-width: 650px;
 }
 
-/* SECTION HEADERS */
+/* TECHSTACK & TOOLS */
 .section-title {
   font-size: 7.5rem;
   font-weight: bold;
   text-transform: lowercase;
+  margin-top: 1.5rem;
+  margin-bottom: 0.3rem;
 }
 
-.tech-header {
-  display: flex;
-  justify-content: flex-end;
+/* Techstack header */
+.techstack-title {
+  display: block; 
   width: 100%;
-  margin-top: 4rem;
-  margin-bottom: 0.5rem;
-  padding-right: 40px;
+  text-align: right; 
+  padding-right: 2%; 
+  box-sizing: border-box; 
 }
 
-.tools-header {
+
+/* Tools header */
+.tools-title {
   display: flex;
   justify-content: flex-start;
-  width: 100%;
-  margin-top: 1.5rem;
-  margin-bottom: 0.1rem;
   padding-left: 40px;
+  width: 100%;
 }
 
-/* TECH CARDS */
+/* Tech Cards */
 .tech-row {
   display: flex;
   gap: 50px;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   flex-wrap: wrap;
 }
 
@@ -104,7 +107,7 @@ body, html {
   gap: 12px;
   padding: 10px 20px;
   background-color: #fff;
-  border: 1px solid #000000;
+  border: 1px solid #000;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
   min-width: 160px;
   height: 60px;
@@ -126,28 +129,35 @@ body, html {
   font-size: 1.1rem;
 }
 
-/* TOOLS GRID */
-.tech-grid {
+/* Tools Grid */
+.tools-grid {
+  margin-bottom: 16px;
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
 }
 
+/* Media Query */
 @media screen and (max-width: 768px) {
   .section-title {
     font-size: 3rem;
     text-align: center;
-  }
-
-  .tech-header, .tools-header {
-    justify-content: center;
     padding: 0;
   }
 
-  .about-container {
+  .techstack-title, .tools-title {
+    justify-content: center !important;
+    padding: 0 !important;
+  }
+
+  .about-content {
     flex-direction: column;
     text-align: center;
+  }
+
+  .about-text-container {
+    max-width: 100%;
   }
 }

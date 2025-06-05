@@ -12,14 +12,14 @@ function Navbar() {
           </div>
 
           <div className="navbar-section center">
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#project">Projects</a>
             <a href="#connect">Connect</a>
           </div>
 
           <div className="navbar-section right">
-            <a href="#" className="profile-btn">My Profile</a>
+            <a href="#about" className="profile-btn">My Profile</a>
           </div>
         </nav>
       </header>
